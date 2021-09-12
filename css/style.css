@@ -71,11 +71,102 @@ li.selected > span{
 div.telefone-header{
     float: left;
     position: relative;
-    top: -8px;
+    top: -3px;
 }
 
 div.telefone-header span{
-    font-size: 27px;
+    font-size: 22px;
     color: white;
     padding-left: 30px;
+}
+
+.content-header{
+    padding: 60px 0;
+}
+
+.content-header .one{
+    float: left;
+    width: 50%;
+}
+
+.content-header .one h2{
+    color: #509d87;
+    font-weight: normal;
+    font-size: 37px;
+}
+
+.content-header .one p,
+.content-header .one span{
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.content-header .one form input{
+    display: inline-block;
+}
+
+.content-header .one form input[type=email]{
+    width: 220px;
+    height: 45px;
+    margin: 10px 0;
+    border: 3px solid #ccc;
+    border-radius: 40px;
+    padding-left: 15px;
+}
+
+.content-header .one form input[type=email]:focus{
+    outline: 0;
+}
+
+.content-header .one form input[type=submit]{
+    background-color: #00daaa;
+    margin: 10px 0;
+    color:white;
+    cursor: pointer;
+    border:0;
+    height: 40px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+}
+
+.content-header .one span{
+    color: #509d87;
+    font-size: 13px;
+    margin-top: 20px;
+    display: block;
+}
+
+.content-header .two{
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.content-header .two img{
+    float: left;
+    width: 50%;
+    border: 10px solid rgba(0,0,0,0);
+}
+
+@media screen and (max-width: 900px) {
+    .content-header .one{
+        text-align: center;
+        width: 100%;
+    }
+    .content-header .two{
+        display: none;
+    }
+
+    .telefone-header{
+        display: none;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    section .header-master{
+        min-height: 400px;
+    }
 }
