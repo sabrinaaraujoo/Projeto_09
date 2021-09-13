@@ -189,6 +189,38 @@ section.diferenciais > .container{
 }
 
 /*  */
+.sobre > .container{
+    max-width: 1440px;
+}
+
+.sobre-container{
+    float: left;
+    width: 50%;
+}
+
+.sobre-container img{
+    max-width: 100%;
+}
+
+.sobre-container h2{
+    font-size: 33px;
+    margin: 10px 0;
+    color: #a9c4b8;
+    font-weight: normal;
+}
+
+.sobre-container h2 > b{
+    color: #03ca9f;
+}
+
+.sobre-container p{
+    color: black;
+    font-size: 15px;
+}
+
+.padsobre{
+    padding: 10px 50px;
+}
 
 @media screen and (max-width: 900px) {
     .content-header .one{
@@ -215,4 +247,7 @@ section.diferenciais > .container{
         width: 100%;
         text-align: center;
     }
+
+    .sobre-container{width: 100%;}
+    .padsobre{padding: 0;}
 }
