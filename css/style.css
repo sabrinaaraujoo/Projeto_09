@@ -237,8 +237,90 @@ section.depoimento h2{
     font-size: 29px;
 }
 
-section.depimentos p {
+section.depoimento p {
     font-size: 15px;
+}
+
+section.etapas{
+    padding: 40px 0;
+}
+
+section.etapas > .container{
+    max-width: 1200px;
+}
+
+section.etapas h2{
+    text-align: center;
+    color: #3b3e42;
+}
+
+.etapas__single{
+    float: left;
+    width: 50%;    
+}
+
+.etapas__group img{
+    max-width: 100%;
+    float: left;
+}
+
+.etapas__single .etapas__group:nth-child(1) img{
+    width: 50%;
+}
+
+.etapas__group p{
+    width: 50%;
+    float: left;
+    padding-top: 90px;
+    padding-left: 30px;
+    color: #509d87;
+}
+
+.etapas__group2{
+    margin-bottom: 40px;
+}
+
+.etapas__group2 .circle{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    height: 40px;
+    width: 1px;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,0);
+    background: black;
+}
+
+.circle span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.etapas__descricao{
+    float: left;
+    width: calc(100% - 100px);
+    padding: 0 20px;
+}
+
+.etapas__descricao h3{
+    color: #03ca9f;
+    font-size: 18px;
+}
+
+.etapas__descricao p {
+    color: #2d2d2d;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 900px) {
