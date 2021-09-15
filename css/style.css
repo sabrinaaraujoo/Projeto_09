@@ -190,6 +190,7 @@ section.diferenciais > .container{
 
 /*  */
 .sobre > .container{
+    position: relative;
     max-width: 1440px;
 }
 
@@ -200,6 +201,8 @@ section.diferenciais > .container{
 
 .sobre-container img{
     max-width: 100%;
+    position: relative;
+    top: 30px;
 }
 
 .sobre-container h2{
@@ -214,6 +217,8 @@ section.diferenciais > .container{
 }
 
 .sobre-container p{
+    position: relative;
+    z-index: 1;
     color: black;
     font-size: 15px;
 }
@@ -226,6 +231,9 @@ section.depoimento{
     width: 100%;
     padding-top: 200px;
     padding-bottom: 300px;
+    position: relative;
+    top: -70px;
+    z-index: 0;
     color: #2d2d2d;
     text-align: center;
     background-image: url('../images/bg_02.png');
@@ -250,6 +258,7 @@ section.etapas > .container{
 }
 
 section.etapas h2{
+    padding-bottom: 10px;
     text-align: center;
     color: #3b3e42;
 }
@@ -323,6 +332,36 @@ section.etapas h2{
     font-size: 14px;
 }
 
+@media screen and (max-width: 1024px) {
+    .etapas__single{width: 100%;}
+    .etapas__group{margin-bottom: 40px;}
+
+    section.etapas > .container{
+        max-width: 700px;
+    }
+
+    .etapas__group img{
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .etapas__single .etapas__group:nth-child(1) img{
+        max-width: 100%;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .etapas__group p {
+        width: 100%;
+        text-align: center;
+        display: block;
+        float: none;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .content-header .one{
         text-align: center;
@@ -349,6 +388,18 @@ section.etapas h2{
         text-align: center;
     }
 
+    section.depoimento{
+        top: 0;
+    }
+
+    .sobre-container img{
+        top: 0;
+    }
+
     .sobre-container{width: 100%;}
     .padsobre{padding: 0;}
+}
+
+@media screen and (max-width: 480px){
+    .etapas__group2{display: none;}
 }
